@@ -1,0 +1,690 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emerald Hotel</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css" integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="assets/img/emerald.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+  <nav>
+    <div class="content flex_space">
+      <div class="logo">
+        <img src="assets/img/LOGO-EMERALD.png" alt="">
+      </div>
+      <div class="navlinks">
+        <ul id="menulist">
+          <li><a href="#home">home</a> </li>
+          <li><a href="#about">Sobre</a> </li>
+          <li><a href="#rooms">Quartos</a> </li>
+          <li><a href="#photos">Imagens</a> </li>
+          <li><a href="#service">Serviços</a> </li>
+          <li><a href="#news">Novidades</a> </li>
+        </ul>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+    </div>
+</nav>
+
+
+  <script>
+    var menulist = document.getElementById('menulist');
+    menulist.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menulist.style.maxHeight == "0px") {
+        menulist.style.maxHeight = "100vh";
+      } else {
+        menulist.style.maxHeight = "0px";
+      }
+    }
+  </script>
+
+
+  <section class="home" id="home">
+    <div class="content">
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <img src="assets/img/banner-1.png" alt="">
+          <div class="text">
+            <h1>Passe suas férias aqui!</h1>
+            <p>Os melhores quartos para você e sua família você encontra aqui!
+            </p>
+            <div class="flex">
+              <button class="secondary-btn">Entre em Contato</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/banner-2.png" alt="">
+          <div class="text">
+            <h1>Passe suas férias aqui!</h1>
+            <p>Os melhores quartos para você e sua família você encontra aqui!
+            </p>
+            <div class="flex">
+              <button class="secondary-btn">Entre em Contato</button>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img src="assets/img/banner-3.png" alt="">
+          <div class="text">
+            <h1>Passe suas férias aqui!</h1>
+            <p>Os melhores quartos para você e sua família você encontra aqui!
+            </p>
+            <div class="flex">
+              <button class="secondary-btn">Entre em Contato</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js" integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA==" crossorigin="anonymous"
+    referrerpolicy="no-referrer"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+  <section class="book">
+    <div class="container flex_space">
+      <div class="text">
+        <h1> <span>Reserve</span> seus quartos </h1>
+      </div>
+      <div class="form">
+        <form class="grid">
+          <input type="date" placeholder="Araival Date">
+          <input type="date" placeholder="Departure Date">
+          <input type="number" placeholder="Adultos">
+          <input type="number" placeholder="Crianças">
+          <input class="submit" type="submit" value="VERIFICAR DISPONIBILIDADE">
+        </form>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="about top">   
+    <div class="container flex" id="about">
+      <div class="left">
+        <div class="heading">
+          <h1>Bem Vindo</h1>
+          <h2><strong>Emerald</strong> Hotel</h2>
+        </div>
+        <p>Esse site foi feito com o único intuito para uso pedagógico, feito pelo aluno <strong>Lucas Raphael</strong> (Eu) para a matéria
+        de programação. Espero que gostem! :-)</p>
+        <button class="primary-btn">Saiba Mais!</button>
+      </div>
+      <div class="right">
+        <img src="assets/img/about.png" alt="">
+      </div>
+    </div>
+  </section>
+
+
+  <section class="rooms" id="rooms">
+    <div class="container top">
+      <div class="heading">
+        <h1>Quartos</h1>
+        <h2>Nossos Quartos</h2>
+        <p>Confira aqui todas as opções de quartos que temos disponíveis!
+        </p>
+      </div>
+
+      <div class="content mtop">
+        <div class="owl-carousel owl-carousel1 owl-theme">
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto Símples</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo a opção mais barata, para apenas 1 (uma) pessoa, o nosso quarto símples é perfeito para quem quer aproveitar ao máximo, sem gastar muito!
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$250 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+          
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-3.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto Símples Casal</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo uma outra opção barata, esse quarto é perfeito para casais (ou 2(duas) pessoas) que querem aproveitar o momento sem gastar tanto.</p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$300 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto Executivo Símples</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Também temos o Executivo Símples, para apenas 1 (uma) pessoa sendo uma opção mais barata para quem quer ter uma experiência 
+                de executivo, por um preço menor.</p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$400 <span> <br> Por Noite </span></h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-4.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto Executivo Completo</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Nosso quarto mais popular, o Executivo Completo suporta até 2(duas) pessoas, tendo acesso aos bares executivos exclusivos, entre
+                outros benefícios exclusivos!
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$500 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-5.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto De Luxo 1</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo uma das opções mais caras, nosso quarto de luxo suporta até 4 (quatro) pessoas, sendo ideal se você quiser viajar com a 
+                sua família e ficar em um lugar aconchegante.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$600 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-6.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto De Luxo 2</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo uma das opções mais caras, nosso quarto de luxo suporta até 4 (quatro) pessoas, sendo ideal se você quiser viajar com a 
+                sua família e ficar em um lugar aconchegante.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$600 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div> 
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-7.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto De Luxo 3</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo uma das opções mais caras, nosso quarto de luxo suporta até 4 (quatro) pessoas, sendo ideal se você quiser viajar com a 
+                sua família e ficar em um lugar aconchegante.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$600 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/room-8.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quarto De Luxo 4</h2>
+              <div class="rate flex">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <p>Sendo uma das opções mais caras, nosso quarto de luxo suporta até 4 (quatro) pessoas, sendo ideal se você quiser viajar com a 
+                sua família e ficar em um lugar aconchegante.
+              </p>
+              <div class="button flex">
+                <button class="primary-btn">AGENDE AGORA</button>
+                <h3>R$600 <span> <br> Por Noite </span> </h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 40,
+      nav: true,
+      dots: false,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 2,
+          margin: 10,
+        },
+        1000: {
+          items: 3
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="gallery">
+    <div class="container top">
+      <div class="heading">
+        <h1>Fotos</h1>
+        <h2>Nossa Galeria</h2>
+        <p>Algumas Fotos do nosso hotel!
+      </div>
+    </div>
+
+    <div class="content mtop" id="photos">
+      <div class="owl-carousel owl-carousel1 owl-theme">
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-1.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-2.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-3.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-4.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-5.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-6.png" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-7.jpg" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-8.jpg" alt="">
+          </div>
+        </div>
+        <div class="items">
+          <div class="img">
+            <img src="assets/img/gallery-9.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <script>
+    $('.owl-carousel1').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: true,
+      dots: false,
+      autoplay: true,
+      autoplayTimeout: 1000,
+      autoplayHoverPause: true,
+      navText: ["<i class = 'fa fa-chevron-left'></i>", "<i class = 'fa fa-chevron-right'></i>"],
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 4,
+        },
+        1000: {
+          items: 6
+        }
+      }
+    })
+  </script>
+
+
+  <section class="services top" id="service">
+    <div class="container">
+      <div class="heading">
+        <h1>Serviços</h1>
+        <h2>Nossos Serviços</h2>
+        <p>Reservando um de nossos quartos, será incluso:
+      </div>
+
+
+      <div class="content flex_space">
+        <div class="left grid2">
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-champagne-glasses"></i>
+              <h3>Comidas Deliciosas</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-person-biking"></i>
+              <h3>Área Fitness</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-utensils"></i>
+              <h3>Restaurante interno</h3>
+            </div>
+          </div>
+          <div class="box">
+            <div class="text">
+              <i class="fa-solid fa-spa"></i>
+              <h3>Spa de beleza</h3>
+            </div>
+          </div>
+        </div>
+        <div class="right">
+          <img src="assets/img/service.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="Customer top">
+    <div class="container">
+      <div class="owl-carousel owl-carousel2 owl-theme">
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Amo viajar e com certeza esse foi um dos melhores hotéis que ja fiquei na minha vida! Atendimento ótimo, funcionários super atenciosos
+            quartos lindos, comidas delicisosas, a área de lazer então, nem se fala. Amei a esperiência e com certeza voltarei aqui na próxima oportunidade!</p>
+          <h3>Julia Almeida</h3>
+          <label>Julia Almeida</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Amo viajar e com certeza esse foi um dos melhores hotéis que ja fiquei na minha vida! Atendimento ótimo, funcionários super atenciosos
+            quartos lindos, comidas delicisosas, a área de lazer então, nem se fala. Amei a esperiência e com certeza voltarei aqui na próxima oportunidade!</p>
+          <h3>Isadora Lamim</h3>
+          <label>Isadora Lamim</label>
+        </div>
+        <div class="item">
+          <i class="fa-solid fa-quote-right"></i>
+          <p>Amo viajar e com certeza esse foi um dos melhores hotéis que ja fiquei na minha vida! Atendimento ótimo, funcionários super atenciosos
+            quartos lindos, comidas delicisosas, a área de lazer então, nem se fala. Amei a esperiência e com certeza voltarei aqui na próxima oportunidade!</p>
+          <h3>João Pedro</h3>
+          <label>João Pedro</label>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script>
+    $('.owl-carousel2').owlCarousel({
+      loop: true,
+      margin: 0,
+      nav: false,
+      dots: true,
+      responsive: {
+        0: {
+          items: 1
+        },
+        768: {
+          items: 1,
+        },
+        1000: {
+          items: 1
+        }
+      }
+    })
+  </script>
+
+
+
+  <section class="news top rooms" id="news">
+    <div class="container">
+      <div class="heading">
+        <h1>Novidades</h1>
+        <h2>Nossas Novidades</h2>
+        <p>Aqui Postamos algumas novidades sobre nosso hotel, fique ligado aqui!</p>
+      </div>
+
+
+      <div class="content flex">
+        <div class="left grid2">
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/blog-1.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Novos Bares Espalhados No Hotel.</h2>
+              <div class="admin-flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>763</label>
+                <i class="fa fa-comments"></i>
+                <label>542</label>
+              </div>
+              <p>Por conta da construção de novos quartos, para ser possível atender a todos e entregar a melhor experiência possível, um novo bar gourmet
+                está em construção, provávelmente ficará pronto dentro de 5 meses.</p>
+            </div>
+          </div>
+          <div class="items">
+            <div class="image">
+              <img src="assets/img/blog-2.png" alt="">
+            </div>
+            <div class="text">
+              <h2>Quartos Novos!</h2>
+              <div class="admin-flex">
+                <i class="fa fa-user"></i>
+                <label>Admin</label>
+                <i class="fa fa-heart"></i>
+                <label>532</label>
+                <i class="fa fa-comments"></i>
+                <label>247</label>
+              </div>
+              <p>Com o intúito de suportar ainda mais pessoas, estamos construindo novos quartos, no total serão 18 novos quartos, do modelo Executivo!
+                A Contrução provávelmente ficará pronto dentro de 5 meses.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="right">
+          <div class="box flex">
+            <div class="img">
+              <img src="assets/img/blog-s1.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Nova Área de Lazer!</h2>
+              <p>Construimos uma nova área de lazer gourmet, ficando ao lado da área das piscinas, todos poderão acessar a área de lazer!</p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="assets/img/blog-s2.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Festa de Carnaval!</h2>
+              <p>Com o carnaval chegando, iremos fazer uma festa em nossa área de eventos, a festa ocorrerá dia 21/02 a partir das 17h.
+              </p>
+            </div>
+          </div>
+          <div class="box flex">
+            <div class="img">
+              <img src="assets/img/blog-s3.png" alt="">
+            </div>
+            <div class="stext">
+              <h2>Ampliação do Jardim Externo!</h2>
+              <p>Agora temos um Jardim externo, onde serão possíveis fazer piqueniques com a família e aproveitar ainda mais o hotel!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="newsletter mtop">
+    <div class="container flex_space">
+      <h1>Assine a nossa newsletter</h1>
+      <input type="text" placeholder="Seu Email">
+      <input class="submit" type="submit" value="Se Inscreva">
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid">
+      <div class="box">
+        <img src="assets/img/LOGO-EMERALD.png" alt="">
+        <p>Esse site foi feito com o único intuito para uso pedagógico, feito pelo aluno <br>
+            Lucas Raphael (Eu) para a matéria de programação. Espero que gostem! :-)</p>
+        <div class="icon">
+          <i class="fa fa-facebook-f"></i>
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h2>Links</h2>
+        <ul>
+          <li>História da empresa</li>
+          <li>Sobre Nós</li>
+          <li>Nos Contate</li>
+          <li>Serviços</li>
+          <li>Política de Privacidade
+        </li>
+        </ul>
+      </div>
+
+      <div class="box">
+        <h2>Nos Contate</h2>
+        <p>Contatos:
+        </p>
+        <i class="fa fa-location-dot"></i>
+        <label>1800 Epcot Resorts Blvd, Lake Buena Vista </label> <br>
+        <i class="fa fa-phone"></i>
+        <label>(00) 99999-9999</label> <br>
+        <i class="fa fa-envelope"></i>
+        <label>contato@emerald-hotel.com</label> <br>
+      </div>
+    </div>
+  </footer>
+
+  <div class="legal">
+    <p class="container">Copyright (c) 2022 Copyright Emerald Hotel Todos os Direitos Reservados.</p>
+  </div>
+
+
+
+  <script src="https://kit.fontawesome.com/032d11eac3.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
